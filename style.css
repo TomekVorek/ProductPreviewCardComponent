@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --firstFontFamily: 'Montserrat', sans-serif;
+    --secondFontFamily: 'Fraunces', serif;
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Cream);
+    display: flex;
+    justify-items: center;
+    place-items: center;
+    place-content: center;
+}
+
+#card-container {
+    width: 50%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+    background-color: var(--White);
+    border: transparent;
+    border-radius: 10px;
+}
+#photo-container {
+  text-align: center;
+  width:100%;
+  background-image: url(images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: transparent;
+  border-radius: 10px 0 0 10px;
+}
+
+#content-container {
+    padding: 25px;
+}
+
+h4 {
+    font-family: var(--firstFontFamily);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin: 10px auto 20px;
+    color: var(--DarkGrayishBlue);
+}
+
+h1 {
+    font-family: var(--secondFontFamily);
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 35px;
+    margin-bottom: 20px;
+    color: var(--VeryDarkBlue);
+}
+
+p{
+    font-family: var(--firstFontFamily);
+    line-height: 30px;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: var(--DarkGrayishBlue);
+}
+
+#value-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#price-container {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 25px;
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+#actual-value {
+    font-family: var(--secondFontFamily);
+    font-size: 2.5rem;
+    color: var(--DarkCyan);
+    font-weight: bold;
+}
+
+#previous-value {
+    font-family: var(--secondFontFamily);
+    text-decoration:line-through;
+    color: var(--DarkGrayishBlue);
+}
+
+#button-container{
+    background-color: var(--DarkCyan);
+    color: var(--White);
+    width: 100%;
+    padding: 15px;
+    border: transparent;
+    border-radius: 5px;
+    display: flex;
+    place-content: center;
+    column-gap: 15px;
+    font-family: var(--firstFontFamily);
+    font-weight: bold;
+}
+
+#button-container:hover {
+    cursor: pointer;
+    background-color: hsl(158, 72%, 15%);
+}
