@@ -1,0 +1,2 @@
+# ProductPreviewCardComponent
+Projekt karty produktu
